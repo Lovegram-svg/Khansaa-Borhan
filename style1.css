@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  font-size: 15px;
+  font-family: "roboto", sans-serif;
+  line-height: 18px;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  grid-template-areas: "title icon-1 icon-2";
+  grid-template-columns: minmax(250px, 1000px) auto;
+  margin: 20px 10px 0 10px;
+}
+
+.hero {
+  grid-area: title;
+  min-height: 30px;
+}
+
+.hero h1 {
+  font-family: "Rochester", cursive;
+  font-weight: 300;
+}
+
+.icon-1 {
+  grid-area: icon-1;
+  display: grid;
+  place-items: center end;
+  padding: 7px;
+  font-size: 1.1rem;
+}
+
+.icon-2 {
+  grid-area: icon-2;
+  display: grid;
+  place-items: center end;
+  padding: 7px;
+  font-size: 1.1rem;
+}
+
+/* STORY */
+.story {
+  padding: 5px;
+}
+
+.stories {
+  list-style: none;
+  display: grid;
+  grid-template-areas: "story-1 story-2 story-3";
+  justify-content: start;
+}
+
+.story-1 {
+  grid-area: story-1;
+  display: grid;
+  place-items: center;
+  padding: 5px 10px 5px 5px;
+}
+
+.story-1 i {
+  margin-top: -18px;
+  margin-right: -35px;
+  color: dodgerblue;
+}
+
+.story-2 {
+  grid-area: story-2;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+}
+
+.story-2:hover,
+.story-3:hover {
+  transform: scale(1.06);
+}
+.story-3 {
+  grid-area: story-3;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+}
+
+h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 320;
+  font-size: 0.8em;
+}
+h4 {
+  font-size: 0.7em;
+  font-weight: 280;
+}
+h5 {
+  font-size: 0.6em;
+  font-weight: 250;
+}
+
+.story-1 img,
+.story-2 img,
+.story-3 img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+}
+
+.story-2 img,
+.story-3 img {
+  content: "";
+  background: linear-gradient(5deg, #fc9090, #ff6f00, #ffeb3b, #ed5353);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* FEED-1 */
+.Feed-1 {
+  display: grid;
+  grid-template-areas:
+    "Users"
+    "Post"
+    "React"
+    "Caption";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 12px;
+}
+
+.Users {
+  grid-area: Users;
+  display: grid;
+  grid-template-areas: "Foto Nama";
+  grid-template-columns: auto 5fr;
+  align-items: center;
+  padding: 0 7px 2px 7px;
+}
+
+.Users .PP {
+  grid-area: Foto;
+  padding: 13px 7px 9px 8px;
+}
+
+.PP img {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.PP .cc {
+  margin-left: 12px;
+  margin-top: -7px;
+  z-index: -4;
+  position: relative;
+}
+
+.PP .bor {
+  position: absolute;
+  z-index: 0;
+}
+
+span {
+  font-weight: 500;
+}
+.nama {
+  grid-area: Nama;
+}
+
+.Post {
+  grid-area: Post;
+}
+.Post video {
+  width: 100%;
+}
+.React {
+  grid-area: React;
+  display: grid;
+  grid-template-areas: "like comment share archive";
+  grid-template-columns: 50px 35px 40px auto;
+  padding: 4px 7px;
+}
+
+.icon-3 {
+  grid-area: like;
+  display: grid;
+  grid-template-columns: 20px auto;
+  place-items: center start;
+}
+
+.icon-4 {
+  grid-area: comment;
+  display: grid;
+  grid-template-columns: 20px auto;
+  place-items: center start;
+}
+
+.icon-5 {
+  grid-area: share;
+  display: grid;
+  grid-template-columns: 20px auto;
+  place-items: center start;
+}
+
+.icon-6 {
+  grid-area: archive;
+  display: grid;
+  place-items: center end;
+}
+
+.Caption {
+  grid-area: Caption;
+  padding: 2px 7px 2px 7px;
+}
+
+.content .garis {
+  background-color: #444343;
+  width: 100%;
+  height: 0.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Ads {
+  display: grid;
+  grid-template-areas:
+    "Acara"
+    "Jadwal";
+  padding: 5px;
+}
+
+.Acara {
+  grid-area: Acara;
+  display: grid;
+  grid-template-areas: "Kami Semua";
+  padding-bottom: 10px;
+}
+
+.Acara-Kami {
+  grid-area: Kami;
+  display: grid;
+  place-items: center start;
+  padding-left: 5px;
+}
+
+.Lihat-Semua {
+  grid-area: Semua;
+  display: grid;
+  place-items: center end;
+  padding-right: 5px;
+  color: rgb(0, 153, 255);
+  font-weight: 300;
+}
+
+.Jadwal {
+  grid-area: Jadwal;
+  display: grid;
+  grid-template-areas: "Akad Makan";
+  column-gap: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.Jadwal img {
+  border-radius: 5%;
+}
+
+.foto-akad,
+.foto-makan {
+  display: grid;
+  place-items: center;
+}
+.Jadwal a {
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 153, 255);
+  padding: 2% 15%;
+  font-size: 0.8em;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 15px;
+  box-shadow: 0 3px 10px #111;
+}
+.foto-akad,
+.foto-makan {
+  position: relative;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 1.5%;
+  display: grid;
+  place-content: center;
+  background-color: #d1a86b;
+  color: white;
+}
+
+.footer h3 {
+  font-weight: 400;
+  font-size: 9px;
+}
+
+.footer h3 span {
+  font-family: "Rochester", cursive;
+  font-size: 1.5em;
+}
+
+.audio-icon-wrapper {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+  margin: auto;
+  font-weight: 300;
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+  right: 5px;
+  padding: 2px;
+  background-color: rgba(128, 128, 128, 0.527);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.foto-post {
+  position: relative;
+}

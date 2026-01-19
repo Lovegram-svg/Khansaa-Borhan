@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.header {
+  position: relative;
+}
+.login video {
+  position: absolute;
+  z-index: -99;
+  object-fit: cover;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: "Rochester", cursive;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.pp {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.pp img {
+  border-radius: 100%;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.tamu {
+  font-size: 0.7em;
+  font-weight: 350;
+}
+.button {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5% 25%;
+  background-color: dodgerblue;
+  color: white;
+  box-shadow: 0 3px 10px #111;
+  border: 2px solid dodgerblue;
+  border-radius: 7px;
+  font-size: 0.7em;
+  font-weight: 350;
+}
+
+.button h4 {
+  font-size: 0.5em;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 3px;
+}
