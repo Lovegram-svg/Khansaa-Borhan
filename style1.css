@@ -106,26 +106,21 @@ h5 {
   font-weight: 250;
 }
 
+.story-ring {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(5deg, #fc9090, #ff6f00, #ffeb3b, #ed5353);
+}
+
 .story-1 img,
-.story-2 img,
-.story-3 img {
-  border-radius: 100%;
+.story-ring img {
   width: 50px;
   height: 50px;
-  border: 3px solid transparent;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
 }
-
-.story-2 img,
-.story-3 img {
-  content: "";
-  background: linear-gradient(5deg, #fc9090, #ff6f00, #ffeb3b, #ed5353);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
 /* FEED-1 */
 .Feed-1 {
   display: grid;
