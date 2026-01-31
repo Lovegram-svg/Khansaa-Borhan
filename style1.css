@@ -110,7 +110,14 @@ h5 {
   display: inline-flex;
   padding: 3px;
   border-radius: 50%;
-  background: linear-gradient(5deg, #fc9090, #ff6f00, #ffeb3b, #ed5353);
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
 }
 
 .story-1 img,
@@ -330,3 +337,4 @@ span {
 .foto-post {
   position: relative;
 }
+
