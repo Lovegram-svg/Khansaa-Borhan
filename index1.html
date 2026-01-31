@@ -76,7 +76,7 @@
 
           <figure class="Post">
             <div class="foto-post">
-              <video id="vidio-post" src="img/2.mp4" autoplay loop></video>
+              <video id="vidio-post" src="img/2.mp4" autoplay muted loop playsinline webkit-playsinline></video>
               <div id="audio-container">
                 <audio id="song" autoplay loop>
                   <source src="audio/Nadin-Kekal.mp3.mp3" type="audio/mp3" />
@@ -265,22 +265,19 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function playVidio() {
-        const vidio = document.querySelector("#vidio-post");
-        vidio.play();
-      }
 
-      playVidio();
-    </script>
     <script>
-      function playAudio() {
-        const song = document.querySelector("#song");
-        song.volume = 0.6;
-        song.play();
-      }
+      const song = document.getElementById("#song");
 
-      playAudio();
+      document.addEventListener(
+        "touchstart",
+        () => {
+          song.volume = 0.6;
+          song.play();
+        },
+        { once: true },
+      );
     </script>
   </body>
 </html>
+
