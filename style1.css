@@ -298,7 +298,7 @@ span {
 }
 
 .footer {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 1.5%;
   display: grid;
   place-content: center;
