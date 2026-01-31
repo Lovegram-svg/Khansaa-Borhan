@@ -13,12 +13,10 @@ body {
   font-size: 14px;
   color: white;
 }
-.header {
-  position: relative;
-}
+
 .login video {
   position: absolute;
-  z-index: -99;
+  z-index: 0;
   object-fit: cover;
 }
 .login {
@@ -29,7 +27,10 @@ body {
   justify-items: center;
   min-height: 100vh;
 }
-
+.login > *:not(video) {
+  position: relative;
+  z-index: 2;
+}
 .title {
   font-family: "Rochester", cursive;
   font-weight: 300;
