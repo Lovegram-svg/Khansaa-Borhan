@@ -336,11 +336,11 @@ span {
 }
 
 #musicBtn.playing {
-  color: dodgerblue;
   transform: scale(1.2);
 }
 
 .foto-post {
   position: relative;
 }
+
 
