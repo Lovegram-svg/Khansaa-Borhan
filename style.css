@@ -15,7 +15,7 @@ body {
 }
 
 .login video {
-  position: absolute;
+  position: fixed;
   z-index: 0;
   object-fit: cover;
 }
@@ -85,4 +85,5 @@ body {
   font-style: italic;
   padding-top: 3px;
 }
+
 
