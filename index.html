@@ -31,28 +31,22 @@
             ></video>
             <div class="title">Lovegram</div>
             <div class="pp"><img src="img/Profil0.jpg" alt="" /></div>
-            <div class="tamu"><span>TAMU</span></div>
+            <div class="tamu">Kepada, <span></span></div>
             <div class="button">
               <a href="index1.html ">Masuk</a>
               <h4>Masuk untuk lihat undangan</h4>
             </div>
-          </div>
+          </figure>
         </article>
       </article>
     </main>
-    
-    <script>
-      function playVidio() {
-        const vidio = document.querySelector("#vidio-post");
-        vidio.play();
-      }
 
-      playVidio();
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("nama");
+
+      const namaContainer = document.querySelector(".tamu span");
+      namaContainer.innerText = nama;
     </script>
   </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-
-
-
-
