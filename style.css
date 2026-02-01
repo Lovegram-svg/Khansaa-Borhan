@@ -35,6 +35,7 @@ body {
   font-family: "Rochester", cursive;
   font-weight: 300;
   font-size: 2em;
+  padding: 0 6px;
 }
 
 .pp {
@@ -85,5 +86,6 @@ body {
   font-style: italic;
   padding-top: 3px;
 }
+
 
 
