@@ -337,7 +337,7 @@ span {
 }
 
 #musicBtn.playing {
-  color: dodgerblue;
+  color: white;
   transform: scale(1.2);
 }
 
@@ -355,3 +355,4 @@ span {
   color: black;
   border-radius: 5px;
 }
+
