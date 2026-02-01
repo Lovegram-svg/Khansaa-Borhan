@@ -76,13 +76,14 @@
 
           <figure class="Post">
             <div class="foto-post">
-              <video id="vidio-post" src="img/2.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+              <video id="vidio-post" src="img/2.mp4" autoplay loop></video>
               <audio id="song" loop>
                 <source src="audio/Nadin-Kekal.mp3" type="audio/mpeg" />
               </audio>
-              <div id="musicBtn">
+              <div onclick="toggletText()" id="musicBtn">
                 <i class="bi bi-volume-mute"></i>
               </div>
+              <p id="Klik">Klik untuk musik</p>
             </div>
             <div class="React">
               <div class="icon-3">
@@ -218,7 +219,7 @@
 
             <div class="React">
               <div class="icon-3">
-                <i class="bi bi-heart"></i>
+                <i id="bi bi-heart"></i>
                 <h4>9.999</h4>
               </div>
               <div class="icon-4">
@@ -257,6 +258,7 @@
         </h3>
       </footer>
     </main>
+    <!-- LAGU -->
     <script>
       const song = document.getElementById("song");
       const musicBtn = document.getElementById("musicBtn");
@@ -282,9 +284,14 @@
         }
       });
     </script>
+
+    <!-- ABA ABA LAGU -->
+    <script>
+      document
+        .getElementById("musicBtn")
+        .addEventListener("click", function () {
+          document.getElementById("Klik").style.display = "none";
+        });
+    </script>
   </body>
 </html>
-
-
-
-
