@@ -54,6 +54,10 @@ body {
   font-size: 0.7em;
   font-weight: 350;
 }
+
+.tamu span {
+  font-weight: 500;
+}
 .button {
   padding: 10px;
   display: flex;
@@ -81,3 +85,4 @@ body {
   font-style: italic;
   padding-top: 3px;
 }
+
